@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg,black,rgb(185, 18, 18));
+    height: 100vh;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.calculadora {
+    position: absolute;
+    background-color: rgba(1, 1, 1, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ele move - 50 % no eixo X e -50% no eixo Y */
+    border-radius: 15px; /* Arredondar as bordas */
+    padding: 15px; /*A distancia dos elementos da nossa bordas*/
+}
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer ; /*Muda o cursor quando colocar em cima "BOTÃO"*/
+    background-color: rgb(31, 31, 31);
+    border: none; /*Tirar a borda*/
+    color: white;
+    margin: 3px;
+}
+/*Passar o cursor por cima do botão o fundo vai ficar preto !*/
+.botao:hover{
+    background-color: black;
+}
+/* Paragrafo RESULTADO*/
+#resultado {
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    padding: 8px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    background-color: white;
+}
